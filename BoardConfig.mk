@@ -14,15 +14,12 @@ BOARD_BOOT_HEADER_VERSION := 3
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := kernel
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
-
 # This device boots recovery from the boot partition; there is no separate
 # recovery_a/recovery_b partition in the supplied stock partition set.
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Dynamic partitions / A-B / virtual A-B.
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
 AB_OTA_UPDATER := true
-
 # TWRP UI defaults for the Android TV box.
 TW_THEME := portrait_hdpi
 TW_SCREEN_WIDTH := 1920
