@@ -1,4 +1,5 @@
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_32_bit.mk)
+# Inherit the minimal product configuration for a 32-bit target.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, device/amlogic/a95xf4/device.mk)
@@ -11,9 +12,6 @@ PRODUCT_MODEL := A95XF4
 PRODUCT_MANUFACTURER := Amlogic
 
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.product.device=a95xf4 \
-ro.product.model=A95XF4 \
-ro.product.manufacturer=Amlogic
-
-# Dynamic partitions must be defined as a product variable.
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
+    ro.product.device=a95xf4 \
+    ro.product.model=A95XF4 \
+    ro.product.manufacturer=Amlogic

@@ -5,3 +5,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/init.recovery.amlogic.rc:$(TARGET_COPY_OUT_RAMDISK)/init.recovery.amlogic.rc
+
+# Dynamic partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
