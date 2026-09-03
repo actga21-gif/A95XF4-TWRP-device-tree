@@ -1,14 +1,13 @@
 DEVICE_PATH := device/amlogic/a95xf4
 
 TARGET_ARCH := arm
-TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_ARCH_VARIANT := armv8-2a
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := cortex-a55
 
 TARGET_BOARD_PLATFORM := sc2
 TARGET_BOOTLOADER_BOARD_NAME := ohm
-
 # A95X F4 stock boot image is Android boot image header v3.
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_KERNEL_PAGESIZE := 4096
